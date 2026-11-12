@@ -8,6 +8,8 @@ A read-only PowerShell audit of **locally registered applications**, their store
 
 Use the named release ZIP and extract it before running the tool. Keep the launcher and companion module in the same folder. GitHub hosts the source, downloads and offline validation workflow; the collector never sends reports to GitHub or downloads code while running.
 
+[Read the step-by-step guide with real tenant screenshots](https://www.tiagoscarvalho.com/azure-entra-id/entra-app-credentials-owners-audit-powershell).
+
 ## What you get
 
 | File | Purpose |
@@ -141,4 +143,4 @@ The release candidate was exercised against a real tenant and selected results w
 
 Version `1.0.0` fixes recognition of HTTP statuses inside nested and aggregate exceptions. Its 57 offline checks passed, including nested 401/429/503 failures and stopping later requests. Direct and wrapped HTTP 429 exceptions from the installed Graph SDK were also checked offline. The live inventory was not rerun after this error-handling change. The live environment used an existing administrative account and consent; restricted non-admin access, the declared minimum dependency versions, multi-page responses and service failures were not separately exercised live. See [VALIDATION.md](VALIDATION.md) for the evidence boundaries. Raw tenant reports are not included.
 
-Documentation checked 12 November 2026. The accompanying article is being prepared for final editorial review.
+Documentation checked 12 November 2026. The accompanying [published guide](https://www.tiagoscarvalho.com/azure-entra-id/entra-app-credentials-owners-audit-powershell) includes the walkthrough and real tenant screenshots.
