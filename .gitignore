@@ -1,0 +1,12 @@
+private-evidence/
+*-run-*/
+*Audit/
+report.html
+applications.csv
+credentials.csv
+owners.csv
+coverage.csv
+*.pfx
+*.pem
+*.key
+*.log
